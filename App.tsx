@@ -18,9 +18,17 @@ const App = () => {
           // uri: 'http://localhost:8000/'
         }}
         originWhitelist={['*']}
+        javaScriptEnabled={true} // 启用JavaScript执行
+        allowFileAccess={true}
         style={{
           flex: 1,
         }}
+        decelerationRate='normal'
+        scrollEnabled={true}
+        useWebKit={true}
+        mediaPlaybackRequiresUserAction={true}
+        mixedContentMode="compatibility"
+        allowingReadAccessToURL="*"
       />
     </SafeAreaView>
   )
